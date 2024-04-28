@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Bootcamp Inscrição</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#intro" class="nav-link">Introdução</a>
+            </li>
+            <li class="nav-item">
+              <a href="#importancia" class="nav-link">Estrutura de Dados</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Dúvidas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" >
+      <div class="container">
+    <div class="d-sm-flex align-items-center justify-content-between">
+    <div>
+            <h1> Learn <span class="text-info"> Data Science </span></h1>
+            <p class="lead my-4">
+                Nesse Bootcamp você irá aprender sobre a área da tecnologia que estuda a coleta, o processamento, o tratamento, a análise, a modelagem e a visualização de dados.
+            </p>
+            <button class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+              Quero me inscrever!
+            </button>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="static/assets/Artificial intelligence-pana.svg" alt=""/>
+        </div>
+      </div>
+    </section>
+
+ <!-- Learn Sections -->
+    <section id="intro" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="static/assets/Dark analytics-bro.svg" class="img-fluid" alt=""  />
+          </div>
+          <div class="col-md p-5">
+            <h2>Introdução - O que são dados?</h2>
+            <p class="lead">
+                Dados (e seus diversos tipos) são os blocos básicos da programação.<br>
+                Eles representam uma unidade ou um elemento de informação que pode ser acessado através de um identificador - por exemplo, uma variável.
+                A maior parte das linguagens de programação trabalha com variações baseadas em quatro tipos primitivos...
+            </p>
+
+    <a href="https://www.if.ufrgs.br/fis01069/Python_tipos_de_dados.html" class="btn btn-light mt-3" target=”_blank”>
+            <i class="bi bi-chevron-right"></i> Ler Mais
+        </a>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <!-- Boxes -->
+    <section class="p-5">
+      <h1><p align="center">Areas de atuação:</p></h1>
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                </div>
+
+                <h3 class="card-title mb-3">Data Scientist</h3>
+                <p class="card-text">
+                Participa da formulação do problema, resolução e análise de resultados.
+                </p>
+                <a href="#" class="btn btn-info">Ler mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+
+                </div>
+                <h3 class="card-title mb-3">Business Analyst</h3>
+                <p class="card-text">
+                    Analisa os dados gerados em relação<br>
+                    ao negócio ou empresa avaliada.
+                </p>
+                <a href="#" class="btn btn-dark">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                </div>
+                <h3 class="card-title mb-3">Data Analyst</h3>
+                <p class="card-text">
+                    Analisa os dados disponibilizados em busca de solução para os problemas enfrentados.
+                </p>
+                <a href="#" class="btn btn-info">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="importancia" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>O que são estruturas de dados?</h2>
+            <p class="lead">
+                Em computação, normalmente utilizamos os dados de forma conjunta. <br>
+                O modo como estes dados serão agregados e organizados depende muito de como serão utilizados e processados, levando-se em consideração, por exemplo, a eficiência para buscas, o volume dos dados trabalhados, a complexidade da implementação e a forma como os dados se relacionam. <br>
+                Estas diversas formas de organização são as chamadas estruturas de dados.
+            </p>
+            <a href="https://www.alura.com.br/artigos/estruturas-de-dados-introducao" class="btn btn-light mt-3" target=”_blank”>
+              <i class="bi bi-chevron-right"></i> Saiba Mais
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="static/assets/Deconstructed robot-amico.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Dúvidas Frequentes:</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+              Como funciona um Bootcamp?
+              </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+          <div class="accordion-body">
+            Um curso bootcamp é um modelo de ensino em formato intensivo, em que o principal propósito é desenvolver habilidades e competências de profissionais de maneira ágil. Quem estuda em um bootcamp tem uma imersão completa no aprendizado, por um período de algumas semanas, e sai com a preparação necessária para encarar os desafios do mercado de trabalho na área escolhida. 
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+              Quem pode participar do Bootcamp?
+            </button>
+            </h2>
+            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              Não só para quem quer se desenvolver na área em que já atua, o Bootcamp Learn DataScience traz uma visão atualizada das tendências de mercado e de novas metodologias e ferramentas que podem ser adotadas para todos aqueles que já são ou querem atuar na area de Tecnologia.  
+          </div>
+          </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+              Qual o valor do Bootcamp?
+              </button>
+            </h2>
+            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+            <div class="accordion-body">
+              O Bootcamp "Learn DataScience" é online e gratuito, com certificado!
+          </div>
+          </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                Quando será?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Dos dias 12 á 22 de abril, um aprendizado intesivo, de forma online e gratuita, destinado á todos os níveis de conhecimento!
+              </div>
+            </div>
+          </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-info">
+      <div class="container">
+        <h2 class="text-center text-white">Instrutores</h2>
+        <p class="lead text-center text-white mb-5">
+     O Bootcamp "Learn DataScience" conta com professores com mais de 10 anos de experiência na área de Tecnologia
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3"> Emily Chen</h3>
+                <p class="card-text">
+                  Cientista de dados, com experiência em diversas indústrias, incluindo tecnologia, finanças e saúde. 
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Adam Carter</h3>
+                <p class="card-text">
+                  Analista de negócios com mais de uma década de experiência, especializado em programação Java.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2024 Raphaela Monteiro</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+    
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Participe do Bootcamp<br>
+            Learn DataScience:</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Preencha com suas Informações!</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  Nome Completo:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Seu melhor email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}
